@@ -57,4 +57,4 @@ Montréal — NLP, statistiques, analyses multidimensionnelles sous Python et SA
 
 ## Me contacter
 
-[LinkedIn](https://linkedin.com/in/ouafielias) · ouafielias@gmail.com
+[LinkedIn](https://linkedin.com/in/ouafielias)
