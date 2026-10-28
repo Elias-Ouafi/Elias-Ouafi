@@ -18,7 +18,26 @@ Aujourd'hui chez **AXA** (assurance, Nanterre) sur les pipelines et les contrôl
 qualité de la souscription. Auparavant **Distech Controls** et **Matrox Video** au
 Canada.
 
-## Projet principal
+## Projets principaux
+
+### [ou-brancher-mon-entreprise](https://github.com/Elias-Ouafi/ou-brancher-mon-entreprise) — où implanter un projet électrique de 1 à 50 MW
+
+Une adresse française en entrée ; en sortie, la réponse à « puis-je brancher mon
+projet ici ? » pour un data center, un hub de bornes de recharge, un site industriel
+ou logistique : qui raccorde et à quelle échéance, la facture (prix Eurostat, part
+acheminement TURPE 7), le carbone du réseau, les risques du site et le foncier.
+Données publiques uniquement (RTE, Enedis, Eurostat, ADEME, Géorisques, DVF…),
+chaque chiffre avec sa source et sa limite.
+
+- **Architecture médaillon** : ingestion PySpark vers un bronze Parquet immuable,
+  `MERGE` idempotent dans DuckDB, silver et gold en dbt-duckdb
+- **Une vingtaine de sources ouvertes** : API paginées, quotas, nouvelles
+  tentatives, repli local quand une API tombe
+- **Qualité** : 473 tests sans réseau, dont un `dbt build` complet sur une base
+  synthétique qui reproduit les pièges des sources ; CI GitHub Actions sur chaque PR
+- **Restitution** : ligne de commande, rapports PDF et carte 3D hors ligne en three.js
+
+![Carte 3D générée pour une adresse à Lyon](https://raw.githubusercontent.com/Elias-Ouafi/ou-brancher-mon-entreprise/main/docs/exemples/carte_lyon_decision.png)
 
 ### [breastcancer](https://github.com/Elias-Ouafi/breastcancer) — détection du cancer du sein, de la donnée brute à l'application
 
