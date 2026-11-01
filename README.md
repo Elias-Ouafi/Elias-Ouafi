@@ -33,11 +33,11 @@ chaque chiffre avec sa source et sa limite.
   `MERGE` idempotent dans DuckDB, silver et gold en dbt-duckdb
 - **Une vingtaine de sources ouvertes** : API paginées, quotas, nouvelles
   tentatives, repli local quand une API tombe
-- **Qualité** : 473 tests sans réseau, dont un `dbt build` complet sur une base
+- **Qualité** : 605 tests sans réseau, dont un `dbt build` complet sur une base
   synthétique qui reproduit les pièges des sources ; CI GitHub Actions sur chaque PR
 - **Restitution** : ligne de commande, rapports PDF et carte 3D hors ligne en three.js
 
-![Carte 3D générée pour une adresse à Lyon](https://raw.githubusercontent.com/Elias-Ouafi/ou-brancher-mon-entreprise/main/docs/exemples/carte_lyon_decision.png)
+[![Carte 3D générée pour un data center de 12 MW à Chilly-Mazarin](https://raw.githubusercontent.com/Elias-Ouafi/ou-brancher-mon-entreprise/main/docs/exemples/carte_chilly_raccorder.png)](https://github.com/Elias-Ouafi/ou-brancher-mon-entreprise)
 
 ### [breastcancer](https://github.com/Elias-Ouafi/breastcancer) — détection du cancer du sein, de la donnée brute à l'application
 
